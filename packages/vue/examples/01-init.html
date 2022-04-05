@@ -1,0 +1,16 @@
+<div id="app">
+  <h1>vue3 init</h1>
+  <comp></comp>
+</div>
+<script src="../dist/vue.global.js"></script>
+
+<script>
+  // 函数创建实例
+  const app = Vue.createApp({});
+  // 实例方法
+  app.component('comp',{
+    template:'<div>comp</div>'
+  })
+  // 挂载 mount
+  app.mount('#app')
+</script>
